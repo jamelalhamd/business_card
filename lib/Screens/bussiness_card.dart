@@ -1,5 +1,5 @@
 
-import 'package:business_card/resuable/card.dart';
+
 import 'package:flutter/material.dart';
 
 class Business_card extends StatelessWidget {
@@ -28,10 +28,12 @@ class Business_card extends StatelessWidget {
 
 
 
-      body:const Column(
+      body: Column(
 crossAxisAlignment: CrossAxisAlignment.center,
 
         children: [
+
+
 
 
           SizedBox(height: 105),
@@ -48,11 +50,15 @@ crossAxisAlignment: CrossAxisAlignment.center,
               ),
             ),
           ),
-          SizedBox(height: 5),          SizedBox(height: 5),
+          SizedBox(height: 5),
+
+          SizedBox(height: 5),
           Text("Jamel ALHAMD",style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),),
           SizedBox(height: 1),
           Text("Flutter Developer",style:TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 13),),
           SizedBox(height: 5),
+          Divider(height: 2,color: Colors.blue,endIndent: 5,indent: 5,thickness: 3),
+          SizedBox(height: 1),
           Padding(
             padding: EdgeInsets.all(8.0),
             child:
@@ -81,9 +87,11 @@ crossAxisAlignment: CrossAxisAlignment.center,
 
 
 ]
+
+
       ),
 
-      
+
     );
   }
 }
